@@ -12,11 +12,11 @@ import pymysql
 class LinkerPipeline:
     def open_spider(self, spider):
         self.conn = pymysql.connect(
-            host='81.68.248.232',
+            host='127.0.0.1',
             port=3306,
-            user='rooter',
-            password='emmmm000',
-            db='spider',
+            user='用户名',
+            password='填写密码',
+            db='数据库',
             charset='utf8'
         )
         self.cursor = self.conn.cursor()
